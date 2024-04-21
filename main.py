@@ -3,12 +3,12 @@ import turtle as t
 import random
 
 
-def init_turtle():
+def init_turtle(start_pos=(-250, -250)):
     """set up turtle and screen starting conditions"""
     turtle = t.Turtle()
     turtle.hideturtle()
     turtle.penup()
-    turtle.setpos(-250, -250)
+    turtle.setpos(start_pos)
     turtle.speed('fastest')
 
     return turtle
@@ -22,7 +22,7 @@ def get_colors(image, num_colors=20):
     return colors
 
 
-def create_painting(turtle, rows, cols, colors):
+def create_painting(turtle, colors, rows=10, cols=10):
     """create a rows x cols sized painting of randomly colored dots"""
     start_x = turtle.xcor()
     start_y = turtle.ycor()
@@ -49,6 +49,6 @@ if __name__ == '__main__':
     # get rid of the background colors
     color_list = color_list[3:]
 
-    create_painting(turtle=tim, rows=10, cols=10, colors=color_list)
+    create_painting(turtle=tim, colors=color_list)
 
     screen.exitonclick()
