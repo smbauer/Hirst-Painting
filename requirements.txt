@@ -1,0 +1,2 @@
+colorgram.py @ file:///C:/Users/steve/PycharmProjects/100DaysOfCode/Hirst-Painting/colorgram.py-1.2.0-py2.py3-none-any.whl#sha256=e990769fa6df7261a450c7d5bef3a1a062f09ba1214bff67b4d6f02970a1a27b
+pillow==10.3.0
